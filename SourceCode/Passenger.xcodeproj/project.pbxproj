@@ -586,7 +586,7 @@
 		23D6814F175BE19500CE6FDB /* AndroidXMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AndroidXMLReader.m; sourceTree = "<group>"; };
 		23D68150175BE19500CE6FDB /* NSBundle+AndroidStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+AndroidStrings.h"; sourceTree = "<group>"; };
 		23D68151175BE19500CE6FDB /* NSBundle+AndroidStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+AndroidStrings.m"; sourceTree = "<group>"; };
-		23DC0149174D6C8D0066FEDB /* Passenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Passenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23DC0149174D6C8D0066FEDB /* OPENTAXI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OPENTAXI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DC014C174D6C8D0066FEDB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		23DC014E174D6C8D0066FEDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		23DC0150174D6C8D0066FEDB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -969,7 +969,7 @@
 		23DC014A174D6C8D0066FEDB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				23DC0149174D6C8D0066FEDB /* Passenger.app */,
+				23DC0149174D6C8D0066FEDB /* OPENTAXI.app */,
 				23E8D25F17513AAC00C6AB14 /* Passenger.app */,
 			);
 			name = Products;
@@ -1188,7 +1188,7 @@
 			);
 			name = Passenger;
 			productName = Passenger;
-			productReference = 23DC0149174D6C8D0066FEDB /* Passenger.app */;
+			productReference = 23DC0149174D6C8D0066FEDB /* OPENTAXI.app */;
 			productType = "com.apple.product-type.application";
 		};
 		23E8D20717513AAC00C6AB14 /* Passenger TestFlight */ = {
@@ -1712,7 +1712,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "iPhone-Developer--pqhuy1987-gmail.com--M829PCD469-";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = OPENTAXI;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -1740,7 +1740,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "iPhone-Developer--pqhuy1987-gmail.com--M829PCD469-";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = OPENTAXI;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
