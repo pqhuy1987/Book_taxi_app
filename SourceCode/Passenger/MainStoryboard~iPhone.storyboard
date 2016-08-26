@@ -750,11 +750,24 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Wad-FY-EKp">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="282"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="380"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" id="yIp-OE-KdA" userLabel="Username View">
+                                        <rect key="frame" x="20" y="23" width="280" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="jT0-MN-7ar" userLabel="Username Text Field">
+                                                <rect key="frame" x="8" y="4" width="264" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
                                     <view contentMode="scaleToFill" id="PVC-hV-uh0">
-                                        <rect key="frame" x="20" y="20" width="280" height="37"/>
+                                        <rect key="frame" x="20" y="66" width="280" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="7J3-nq-eaQ">
@@ -770,7 +783,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" id="1yd-sO-XDQ">
-                                        <rect key="frame" x="20" y="65" width="280" height="37"/>
+                                        <rect key="frame" x="20" y="109" width="280" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="mkW-MJ-w2z">
@@ -785,8 +798,21 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
+                                    <view contentMode="scaleToFill" id="wtr-J6-6nh" userLabel="Pathronymic View">
+                                        <rect key="frame" x="20" y="152" width="280" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="9Y0-t4-xyr" userLabel="Pathronymic Text Field">
+                                                <rect key="frame" x="8" y="4" width="264" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
                                     <view contentMode="scaleToFill" id="oTM-a7-Wgf">
-                                        <rect key="frame" x="20" y="110" width="280" height="37"/>
+                                        <rect key="frame" x="20" y="196" width="280" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="XvX-Ya-i34">
@@ -802,7 +828,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" id="ozW-os-ReY">
-                                        <rect key="frame" x="20" y="155" width="280" height="37"/>
+                                        <rect key="frame" x="20" y="242" width="280" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="H32-hS-x4n">
@@ -818,7 +844,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" id="68B-JW-R4U">
-                                        <rect key="frame" x="20" y="200" width="280" height="37"/>
+                                        <rect key="frame" x="20" y="287" width="280" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="7vU-sl-3fu">
@@ -834,7 +860,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" id="8Td-P8-ccy">
-                                        <rect key="frame" x="20" y="245" width="280" height="37"/>
+                                        <rect key="frame" x="20" y="332" width="280" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="JPJ-na-zmz">
@@ -901,12 +927,16 @@
                         <outlet property="lastNameView" destination="1yd-sO-XDQ" id="hNn-Mz-aqh"/>
                         <outlet property="passwordTextField" destination="7vU-sl-3fu" id="Bmd-Rx-BIA"/>
                         <outlet property="passwordView" destination="68B-JW-R4U" id="4N5-wT-p4w"/>
+                        <outlet property="pathronymicTextField" destination="9Y0-t4-xyr" id="QcY-mR-foF"/>
+                        <outlet property="pathronymicView" destination="wtr-J6-6nh" id="zbu-qP-BIK"/>
                         <outlet property="phoneNumberTextField" destination="XvX-Ya-i34" id="Lgm-ms-HJm"/>
                         <outlet property="phoneNumberView" destination="oTM-a7-Wgf" id="21O-vn-a8F"/>
                         <outlet property="scrollView" destination="Wad-FY-EKp" id="JJc-qT-VhD"/>
                         <outlet property="tosCheckMark" destination="TFd-fj-pHP" id="eKR-ga-lHL"/>
                         <outlet property="tosLabel" destination="H8p-dh-TKh" id="woN-zi-ud5"/>
                         <outlet property="tosShowButton" destination="yuS-Mx-rwI" id="uV7-32-yqk"/>
+                        <outlet property="usernameTextField" destination="jT0-MN-7ar" id="i9c-SM-oKu"/>
+                        <outlet property="usernameView" destination="yIp-OE-KdA" id="cbw-r5-00F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ivK-Yl-814" userLabel="First Responder" sceneMemberID="firstResponder"/>

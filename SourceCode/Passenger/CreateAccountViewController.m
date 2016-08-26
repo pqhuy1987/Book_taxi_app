@@ -31,10 +31,16 @@
 @property (weak, nonatomic) IBOutlet FlatButton *createAccountButton;
 @property (weak, nonatomic) IBOutlet FlatButton *cancelButton;
 
+
+
+@property (weak, nonatomic) IBOutlet UIView *usernameView;
+@property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
 @property (weak, nonatomic) IBOutlet UIView *firstNameView;
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
 @property (weak, nonatomic) IBOutlet UIView *lastNameView;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameTextField;
+@property (weak, nonatomic) IBOutlet UIView *pathronymicView;
+@property (weak, nonatomic) IBOutlet UITextField *pathronymicTextField;
 @property (weak, nonatomic) IBOutlet UIView *phoneNumberView;
 @property (weak, nonatomic) IBOutlet UITextField *phoneNumberTextField;
 @property (weak, nonatomic) IBOutlet UIView *emailView;
@@ -98,6 +104,10 @@
         _tosCheckMark.checked = YES; //to avoid additional check for tosMustAccept later.
     }
     
+    _usernameView.backgroundColor = [UIColor textFieldBackgroundColor];
+    _usernameTextField.font = [UIFont lightOpenSansOfSize:17];
+    _usernameTextField.placeholder = NSLocalizedString(@"register_form_user_name_hint", @"");
+    
     _firstNameView.backgroundColor = [UIColor textFieldBackgroundColor];
     _firstNameTextField.font = [UIFont lightOpenSansOfSize:17];
     _firstNameTextField.placeholder = NSLocalizedString(@"register_form_first_name_hint", @"");
@@ -105,6 +115,10 @@
     _lastNameView.backgroundColor = [UIColor textFieldBackgroundColor];
     _lastNameTextField.font = [UIFont lightOpenSansOfSize:17];
     _lastNameTextField.placeholder =  NSLocalizedString(@"register_form_last_name_hint", @"");
+    
+    _pathronymicView.backgroundColor = [UIColor textFieldBackgroundColor];
+    _pathronymicTextField.font = [UIFont lightOpenSansOfSize:17];
+    _pathronymicTextField.placeholder =  NSLocalizedString(@"register_form_pathronymic_name_hint", @"");
 
     _phoneNumberView.backgroundColor = [UIColor textFieldBackgroundColor];
     _phoneNumberTextField.font = [UIFont lightOpenSansOfSize:17];
