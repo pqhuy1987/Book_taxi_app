@@ -25,6 +25,10 @@
 @interface LoginViewController () <UIWebViewDelegate>
 
 @property (nonatomic, strong) WaitDialog* waitDialog;
+@property (weak, nonatomic) IBOutlet UIView *phonenumberView;
+@property (weak, nonatomic) IBOutlet UITextField *phonenumberTextField;
+@property (weak, nonatomic) IBOutlet UIView *passwordView;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 
 @end
 
@@ -45,18 +49,18 @@
 
     [_cancelButton setTitle:NSLocalizedString(@"oauth_button_cancel", @"") forState:UIControlStateNormal];
     [_cancelButton setTitleColor:[UIColor buttonTextColor] forState:UIControlStateNormal];
+    
+    [_loginButton setTitle:NSLocalizedString(@"oauth_button_login", @"") forState:UIControlStateNormal];
+    [_loginButton setTitleColor:[UIColor buttonTextColor] forState:UIControlStateNormal];
+    
+    _phonenumberView.backgroundColor = [UIColor textFieldBackgroundColor];
+    _phonenumberTextField.font = [UIFont lightOpenSansOfSize:17];
+    _phonenumberTextField.placeholder =  NSLocalizedString(@"register_form_phone_hint", @"");
+    
+    _passwordView.backgroundColor = [UIColor textFieldBackgroundColor];
+    _passwordTextField.font = [UIFont lightOpenSansOfSize:17];
+    _passwordTextField.placeholder =  NSLocalizedString(@"register_form_password_1_hint", @"");
 
-    _webView.delegate = self;
-    
-    NSString* url = [[NetworkEngine getInstance] authUrl];
-    
-    self.waitDialog = [[WaitDialog alloc] init];
-    
-    NSURLRequest *requestObject = [NSURLRequest requestWithURL:[NSURL URLWithString:url]
-                                                   cachePolicy:NSURLCacheStorageNotAllowed
-                                               timeoutInterval:30];
-
-    [_webView loadRequest:requestObject];
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,7 +70,6 @@
 }
 
 - (void)viewDidUnload {
-    [self setWebView:nil];
     [self setCancelButton:nil];
     [super viewDidUnload];
 }
@@ -133,19 +136,8 @@
     return YES;
 }
 
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
-{
-    [_waitDialog dismiss];
+- (IBAction)loginButtonPressed:(id)sender {
     
-    NSLog(@"%s, %@", __PRETTY_FUNCTION__, error);
-    
-    if (error.code != 102) //102 == Load frame interrupted, we can ignore this error.
-    {
-        NSString* path = [[NSBundle mainBundle] pathForResource:@"connect_error" ofType:@"html"];
-        NSURL *url = [NSURL fileURLWithPath:path];
-        NSURLRequest *request = [NSURLRequest requestWithURL:url];
-        [_webView loadRequest:request];
-    }
 }
 
 - (IBAction)cancelButtonPressed:(id)sender {
