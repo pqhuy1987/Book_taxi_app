@@ -26,14 +26,16 @@
 #import "MKNetworkKit.h"
 #import "UserSettings.h"
 
-#define PASSENGER_SERVER_URL @"api.tdispatch.com"
+#define PASSENGER_SERVER_URL @"http://139.162.175.147"
 //#error "add your api key/secret/id here"
 #define FLEET_API_KEY @"AIzaSyDz8YJ7IkDMZrZ-u2evcYwOiHJSlIwMVpo"
 #define PASSENGER_CLIENT_ID @"YOUR CLIENT ID@tdispatch.com"
 #define PASSENGER_CLIENT_SECRET @"YOUR SECRET"
+#define PASSENGER_CLIENT_REGISTER @"/api/v1/customer/register"
 
 #define PASSENGER_AUTH_URL @"http://api.tdispatch.com/passenger/oauth2/auth"
 #define PASSENGER_TOKEN_URL @"http://api.tdispatch.com/passenger/oauth2/token"
+#define PASSENGER_LOGIN_PAGE @""
 
 // API
 #define PASSENGER_API_PATH @"passenger/v1"
@@ -150,8 +152,10 @@
     [self enqueueOperation:op];
 }
 
-- (void)createAccount:(NSString *)firstName
+- (void)createAccount:(NSString *)username
+            firstname:(NSString *)firstName
              lastName:(NSString *)lastName
+      pathronymicName:(NSString *)pathronymicname
                 email:(NSString *)email
                 phone:(NSString *)phone
              password:(NSString *)password
@@ -159,15 +163,16 @@
          failureBlock:(NetworkEngineFailureBlock)failureBlock
 {
     NSMutableDictionary* params = [[NSMutableDictionary alloc] initWithDictionary:@{
-                                        @"first_name": firstName,
-                                        @"last_name" : lastName,
+                                        @"username": username,
                                         @"email" : email,
                                         @"phone" : phone,
-                                        @"password" : password,
-                                        @"client_id" : PASSENGER_CLIENT_ID
+                                        @"f_name" : firstName,
+                                        @"l_name" : lastName,
+                                        @"p_name" : pathronymicname
+                                        //@"client_id" : PASSENGER_CLIENT_ID
                                    }];
     
-    MKNetworkOperation *op = [self operationWithPath:[NSString stringWithFormat:@"accounts?key=%@", FLEET_API_KEY]
+    MKNetworkOperation *op = [self operationWithPath:[NSString stringWithFormat:@"%@%@",PASSENGER_SERVER_URL,  PASSENGER_CLIENT_REGISTER]
                                               params:params
                                           httpMethod:@"POST"
                                                  ssl:NO];

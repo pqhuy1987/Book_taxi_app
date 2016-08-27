@@ -48,12 +48,14 @@ typedef void (^NetworkEngineFailureBlock)(NSError* error);
                       completionBlock:(NetworkEngineCompletionBlock)completionBlock
                          failureBlock:(NetworkEngineFailureBlock)failureBlock;
 
-- (void)createAccount:(NSString *)firstName
+- (void)createAccount:(NSString *)username
+            firstname:(NSString *)firstName
              lastName:(NSString *)lastName
+      pathronymicName:(NSString *)pathronymicname
                 email:(NSString *)email
                 phone:(NSString *)phone
              password:(NSString *)password
-    completionBlock:(NetworkEngineCompletionBlock)completionBlock
+      completionBlock:(NetworkEngineCompletionBlock)completionBlock
          failureBlock:(NetworkEngineFailureBlock)failureBlock;
 
 - (void)getTravelFare:(CLLocationCoordinate2D)start
