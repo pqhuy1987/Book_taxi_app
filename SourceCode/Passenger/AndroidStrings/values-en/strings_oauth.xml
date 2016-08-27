@@ -27,5 +27,6 @@
 <resources>
 
     <string name="oauth_button_cancel">Cancel</string>
-
+    <string name="oauth_button_login">Login</string>
+    
 </resources>

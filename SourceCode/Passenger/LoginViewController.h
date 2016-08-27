@@ -31,10 +31,11 @@
 
 @interface LoginViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet FlatButton *cancelButton;
+@property (weak, nonatomic) IBOutlet FlatButton *loginButton;
 
 @property (unsafe_unretained, nonatomic) id<LoginProtocolDelegate> delegate;
+- (IBAction)loginButtonPressed:(id)sender;
 
 - (IBAction)cancelButtonPressed:(id)sender;
 @end
