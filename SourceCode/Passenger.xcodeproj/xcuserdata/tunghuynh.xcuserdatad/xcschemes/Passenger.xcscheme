@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "23DC0148174D6C8D0066FEDB"
-               BuildableName = "Passenger.app"
+               BuildableName = "OPENTAXI.app"
                BlueprintName = "Passenger"
                ReferencedContainer = "container:Passenger.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "23DC0148174D6C8D0066FEDB"
-            BuildableName = "Passenger.app"
+            BuildableName = "OPENTAXI.app"
             BlueprintName = "Passenger"
             ReferencedContainer = "container:Passenger.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "23DC0148174D6C8D0066FEDB"
-            BuildableName = "Passenger.app"
+            BuildableName = "OPENTAXI.app"
             BlueprintName = "Passenger"
             ReferencedContainer = "container:Passenger.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "23DC0148174D6C8D0066FEDB"
-            BuildableName = "Passenger.app"
+            BuildableName = "OPENTAXI.app"
             BlueprintName = "Passenger"
             ReferencedContainer = "container:Passenger.xcodeproj">
          </BuildableReference>
