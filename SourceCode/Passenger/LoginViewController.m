@@ -137,7 +137,7 @@
 }
 
 - (IBAction)loginButtonPressed:(id)sender {
-    
+    [self.delegate loginFinished:YES];
 }
 
 - (IBAction)cancelButtonPressed:(id)sender {
