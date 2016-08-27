@@ -201,18 +201,18 @@
 {
     if (accessTokenAvailable)
     {
-        __block WaitDialog* wait = [[WaitDialog alloc] init];
-        [wait show];
-        [[NetworkEngine getInstance] getAccountPreferences:^(NSObject* response)
-         {
-             [wait dismiss];
+//        __block WaitDialog* wait = [[WaitDialog alloc] init];
+//        [wait show];
+//        [[NetworkEngine getInstance] getAccountPreferences:^(NSObject* response)
+//         {
+//             [wait dismiss];
              [self performSegueWithIdentifier:@"showMainViewController" sender:self];
-         }
-                                              failureBlock:^(NSError *error)
-         {
-             [wait dismiss];
-             [MessageDialog showError:error.localizedDescription withTitle:NSLocalizedString(@"dialog_error_title", @"")];
-         }];
+//         }
+//                                              failureBlock:^(NSError *error)
+//         {
+//             [wait dismiss];
+//             [MessageDialog showError:error.localizedDescription withTitle:NSLocalizedString(@"dialog_error_title", @"")];
+//         }];
     }
     else
     {
