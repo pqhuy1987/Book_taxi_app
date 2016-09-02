@@ -57,7 +57,8 @@
 #endif
     
 //#error "add your google API key here"
-    [GMSServices provideAPIKey:@"AIzaSyDz8YJ7IkDMZrZ-u2evcYwOiHJSlIwMVpo"];
+    [GMSServices provideAPIKey:@"AIzaSyBtHpJRZwrvHm_3DvHjPIHsXa8gx4Gy9MQ"];
+    //[GMSPlacesClient provideAPIKey:@"AIzaSyDg0wYXU-2sYPpY7J6Ly_cn0smnSEJuH3A"];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     

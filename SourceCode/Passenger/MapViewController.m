@@ -172,6 +172,7 @@
         [self performSegueWithIdentifier:@"showTourViewController" sender:self];
         [UserSettings setTourHasBeenShown:YES];
     }
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
